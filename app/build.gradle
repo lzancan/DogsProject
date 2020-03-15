@@ -29,6 +29,8 @@ android {
         }
     }
 
+    dataBinding.enabled = true
+
 }
 
 def lifeCycleExtensionVersion = '1.1.1'
