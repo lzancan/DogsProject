@@ -27,12 +27,6 @@ class DetailFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         arguments?.let {
             dogId = DetailFragmentArgs.fromBundle(it).dogId
-            textView3.text = dogId.toString()
-        }
-
-        buttonList.setOnClickListener{
-            val action = DetailFragmentDirections.actionListFragment()
-            Navigation.findNavController(it).navigate(action)
         }
     }
 
