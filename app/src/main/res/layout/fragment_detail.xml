@@ -6,10 +6,14 @@
         <variable
             name="dog"
             type="com.example.dogsproject.model.DogBreed" />
+        <variable
+            name="palette"
+            type="com.example.dogsproject.model.DogPalette" />
     </data>
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@{palette.color}"
         tools:context=".view.DetailFragment">
 
         <ImageView
